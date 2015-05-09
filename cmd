@@ -23,3 +23,21 @@ Tell Git to use osxkeychain using the global credential.helper config:
 
 git config --global credential.helper osxkeychain
 # Set git to use the osxkeychain credential helper
+
+
+// Installing R-packages
+a <- available.packages()
+// To see the available packages (there are over 6k today)
+head(rownames(a), 3)
+
+// to install packages
+install.packages("package-name")
+install.packages(c("pkga", "pkgb", pkgc"))
+
+// to install from a different source (bioconductor.org) for instance
+source("http://bioconductor.org/biocLite.R")
+biocLite()	// Need to run this first time you source from bioconductor.org
+buocLite(c("GenomicsFeatures", "AnnotationDbi"))
+
+
+
